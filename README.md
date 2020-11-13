@@ -21,7 +21,7 @@
 
   Repo: https://github.com/vetty88/Google-Books
 
-Video of app in action, see file: https://github.com/vetty88/Note-Taker/blob/master/Note%20Taker.mp4
+Video of app in action, see file: https://github.com/vetty88/Google-Books/blob/master/Video.mp4
 
 
 ## Installation
