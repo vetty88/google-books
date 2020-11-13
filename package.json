@@ -34,7 +34,9 @@
     "joi": "^17.3.0",
     "mongoose": "^5.10.14",
     "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
     "webpack": "^5.4.0"
   }
 }
