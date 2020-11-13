@@ -1,5 +1,5 @@
 {
-  "name": "mern",
+  "name": "google books",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -24,6 +24,7 @@
     "axios": "^0.18.0",
     "dotenv": "^8.2.0",
     "express": "^4.16.3",
-    "github": "^14.0.0",
-    "if-env": "^1.0.4",
-    "mo
+    "mongoose": "^5.3.16",
+    "if-env": "^1.0.4"
+  }
+}
