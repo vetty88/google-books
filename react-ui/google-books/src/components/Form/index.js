@@ -1,27 +1,35 @@
 import React from "react";
+import "./style.css";
 
-// This file exports the Input, TextArea, and FormBtn components
-
-export function Input(props) {
+const Form = (props) => {
   return (
-    <div className="form-group">
-      <input className="form-control" {...props} />
-    </div>
+    <form>
+      <div className="form-group row">
+        <label className="BookSearchLabel">
+          <h2 className="searchTitle ml-5">Enter a Book Title or Author Name</h2>
+        </label>
+      </div>
+      <div className="form-group row">
+        <input
+          className="form-control mx-auto input"
+          value={props.search}
+          type="text"
+          name="searchBook"
+          placeholder="Pride & Prejudice"
+          onChange={props.handleInputChange}
+        />
+      </div>
+      <div className="form-group row col-sm-12 justify-content-end">
+        <button
+          type="submit"
+          className="btn btn-light submitBtn mb-3 mr-2"
+          onClick={props.handleFormSubmit}
+        >
+          Search
+        </button>
+      </div>
+    </form>
   );
-}
+};
 
-export function TextArea(props) {
-  return (
-    <div className="form-group">
-      <textarea className="form-control" rows="20" {...props} />
-    </div>
-  );
-}
-
-export function FormBtn(props) {
-  return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
-      {props.children}
-    </button>
-  );
-}
+export default Form;
