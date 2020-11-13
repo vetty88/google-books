@@ -1,8 +1,8 @@
-# Google Books Search
+# google-books Search
 
 ### Overview
 
-In this activity, you'll create a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
+In this activity, you'll create a new React-based google-books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
 
 ### Commits
 
@@ -30,9 +30,9 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 * This application requires at minimum 2 pages, check out the following mockup images for each page:
 
-  * [Search](Search.png) - User can search for books via the Google Books API and render them here. User has the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database.
+  * [Search](Search.png) - User can search for books via the google-books API and render them here. User has the option to "View" a book, bringing them to the book on google-books, or "Save" a book, saving it to the Mongo database.
 
-  * [Saved](Saved.png) - Renders all books saved to the Mongo database. User has an option to "View" the book, bringing them to the book on Google Books, or "Delete" a book, removing it from the Mongo database.
+  * [Saved](Saved.png) - Renders all books saved to the Mongo database. User has an option to "View" the book, bringing them to the book on google-books, or "Delete" a book, removing it from the Mongo database.
 
 1. Start by using the [01-Ins_Mern/create-react-express](../01-Activities/01-Ins_Mern/create-react-express) example as a base for your application.
 
@@ -42,15 +42,15 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 4. At a minimum, books should have each of the following fields:
 
-* `title` - Title of the book from the Google Books API
+* `title` - Title of the book from the google-books API
 
-* `authors` - The books's author(s) as returned from the Google Books API
+* `authors` - The books's author(s) as returned from the google-books API
 
-* `description` - The book's description as returned from the Google Books API
+* `description` - The book's description as returned from the google-books API
 
-* `image` - The Book's thumbnail image as returned from the Google Books API
+* `image` - The Book's thumbnail image as returned from the google-books API
 
-* `link` - The Book's information link as returned from the Google Books API
+* `link` - The Book's information link as returned from the google-books API
 
 * Creating `documents` in your `books` collection similar to the following:
 
