@@ -23,7 +23,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - [Importing a Component](#importing-a-component)
 - [Code Splitting](#code-splitting)
 - [Adding a Stylesheet](#adding-a-stylesheet)
-- [Post-Processing CSS](#post-processing-css)
+- [Post-Processing CSS](#book-processing-css)
 - [Adding a CSS Preprocessor (Sass, Less etc.)](#adding-a-css-preprocessor-sass-less-etc)
 - [Adding Images, Fonts, and Files](#adding-images-fonts-and-files)
 - [Using the `public` Folder](#using-the-public-folder)
@@ -288,7 +288,7 @@ yarn add husky lint-staged prettier
 ```
 
 * `husky` makes it easy to use githooks as if they are npm scripts.
-* `lint-staged` allows us to run scripts on staged files in git. See this [blog post about lint-staged to learn more about it](https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8).
+* `lint-staged` allows us to run scripts on staged files in git. See this [blog book about lint-staged to learn more about it](https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8).
 * `prettier` is the JavaScript formatter we will run before commits.
 
 Now we can make sure every file is formatted correctly by adding a few lines to the `package.json` in the project root.
@@ -481,7 +481,7 @@ If you are concerned about using Webpack-specific semantics, you can put all you
 
 ## Post-Processing CSS
 
-This project setup minifies your CSS and adds vendor prefixes to it automatically through [Autoprefixer](https://github.com/postcss/autoprefixer) so you don’t need to worry about it.
+This project setup minifies your CSS and adds vendor prefixes to it automatically through [Autoprefixer](https://github.com/bookcss/autoprefixer) so you don’t need to worry about it.
 
 For example, this:
 
@@ -510,7 +510,7 @@ becomes this:
 }
 ```
 
-If you need to disable autoprefixing for some reason, [follow this section](https://github.com/postcss/autoprefixer#disabling).
+If you need to disable autoprefixing for some reason, [follow this section](https://github.com/bookcss/autoprefixer#disabling).
 
 ## Adding a CSS Preprocessor (Sass, Less etc.)
 
@@ -694,7 +694,7 @@ render() {
 
 Keep in mind the downsides of this approach:
 
-* None of the files in `public` folder get post-processed or minified.
+* None of the files in `public` folder get book-processed or minified.
 * Missing files will not be called at compilation time, and will cause 404 errors for your users.
 * Result filenames won’t include content hashes so you’ll need to add query arguments or rename them every time they change.
 
@@ -1804,7 +1804,7 @@ This will make sure that all the asset paths are relative to `index.html`. You w
 
 ### Azure
 
-See [this](https://medium.com/@to_pe/deploying-create-react-app-on-microsoft-azure-c0f6686a4321) blog post on how to deploy your React app to [Microsoft Azure](https://azure.microsoft.com/).
+See [this](https://medium.com/@to_pe/deploying-create-react-app-on-microsoft-azure-c0f6686a4321) blog book on how to deploy your React app to [Microsoft Azure](https://azure.microsoft.com/).
 
 ### Firebase
 
@@ -1977,7 +1977,7 @@ In this case, ensure that the file is there with the proper lettercase and that�
 
 ### Modulus
 
-See the [Modulus blog post](http://blog.modulus.io/deploying-react-apps-on-modulus) on how to deploy your react app to Modulus.
+See the [Modulus blog book](http://blog.modulus.io/deploying-react-apps-on-modulus) on how to deploy your react app to Modulus.
 
 ### Netlify
 
@@ -2030,7 +2030,7 @@ Details are available in [this article.](https://zeit.co/blog/unlimited-static)
 
 ### S3 and CloudFront
 
-See this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) on how to deploy your React app to Amazon Web Services [S3](https://aws.amazon.com/s3) and [CloudFront](https://aws.amazon.com/cloudfront/).
+See this [blog book](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) on how to deploy your React app to Amazon Web Services [S3](https://aws.amazon.com/s3) and [CloudFront](https://aws.amazon.com/cloudfront/).
 
 ### Surge
 

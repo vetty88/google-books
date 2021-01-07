@@ -74,7 +74,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 * `/api/books` (get) - Should return all saved books as JSON.
 
-* `/api/books` (post) - Will be used to save a new book to the database.
+* `/api/books` (book) - Will be used to save a new book to the database.
 
 * `/api/books/:id` (delete) - Will be used to delete a book from the database by Mongo `_id`.
 
@@ -130,6 +130,6 @@ Please see [Heroku’s Account Verification Information](https://devcenter.herok
 
 ### One More Thing
 
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
+If you have any questions about this project or the material we have covered, please book them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
 
 **Good Luck!**
