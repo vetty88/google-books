@@ -16,34 +16,34 @@ const SavedResult = props => {
             <div className="card-body player">
                 <div className="article">
                     <h3>Books that You Saved</h3>
-                    {props.savedBooks.map(savedbook => {
+                    {props.savedBooks.map(savedBook => {
                         return (
                             <li className="saved-list list-group-item">
-                                <Row className="SearchResult" id={savedbook.title + "Card"} key={savedbook._id}>
+                                <Row className="SearchResult" id={savedBook.title + "Card"} key={savedBook._id}>
                                     {/* col-3 show image of the book */}
                                     <Col size="2" className="bookImage">
-                                        <img src={savedbook.image} alt={savedbook.title} />
+                                        <img src={savedBook.image} alt={savedBook.title} />
                                     </Col>
                                     <Col size="1" className="emptyCol"/>
                                     {/* col-9 show information of the book */}
                                     <Col size="9" className="bookInfo">
                                         <Row>
-                                            <h2 className="bookTitle">{savedbook.title}</h2>
+                                            <h2 className="bookTitle">{savedBook.title}</h2>
                                         </Row>
                                         <Row>
-                                            <h3 className="bookAuthor">{savedbook.authors}</h3>
+                                            <h3 className="bookAuthor">{savedBook.authors}</h3>
                                         </Row>
                                         <Row>
-                                            <p className="bookDescription">{savedbook.description}</p>
+                                            <p className="bookDescription">{savedBook.description}</p>
                                         </Row>
                                     </Col>
                                 </Row>
                                 <br></br>
                                 <Row className="buttonDiv ">
-                                    <button className="deleteBook btn btn-danger" id={savedbook._id} onClick={() => props.handleDeleteButton(savedbook._id)}>
+                                    <button className="deleteBook btn btn-danger" id={savedBook._id} onClick={() => props.handleDeleteButton(savedBook._id)}>
                                         Delete Book
                                     </button>
-                                    <a href={savedbook.link} target="example">
+                                    <a href={savedBook.link} target="example">
                                         <button className="viewBook btn btn-success">
                                             View Book
                                         </button>
