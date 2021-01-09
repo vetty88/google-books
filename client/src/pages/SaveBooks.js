@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Jumbotron from "../components/Jumbotron";
 import { Container} from "../components/Grid";
-import SavedResult from "../components/SavedResult"
+import SavedResult from "../components/SavedResult";
 
 class SaveBook extends Component {
     state = {
@@ -13,7 +13,7 @@ class SaveBook extends Component {
     componentDidMount() {
         API.getBooks()
             .then(res => this.setState({ savedBooks: res.data }))
-            .catch(err => console.log(err))
+            .catch(err => console.log(err));
     }
 
     //function to remove book by _id
