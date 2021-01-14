@@ -58,8 +58,8 @@ Having an active and healthy commit history on GitHub is important for your futu
     {
       authors: ["Suzanne Collins"]
       description: "Set in a dark vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games. There is only one rule: kill or be killed. When sixteen-year-old Katniss Everdeen steps forward to take her younger sister's place in the games, she sees it as a death sentence. But Katniss has been close to death before. For her, survival is second nature."
-      image: "http://books.google.com/books/content?id=sazytgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-      link: "http://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api"
+      image: "https://books.google.com/books/content?id=sazytgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      link: "https://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api"
       title: "The Hunger Games"
     }
     ```
@@ -86,7 +86,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 ### Bonus Live Updates to Saved Books
 
-* Use React routing and [socket.io](http://socket.io) to create a notification or a component that triggers whenever a user saves an book. Your message should include the title of the saved book.
+* Use React routing and [socket.io](https://socket.io) to create a notification or a component that triggers whenever a user saves an book. Your message should include the title of the saved book.
 
   * Say you have multiple browsers open, each one visiting your site. If you save an book in one browser, then all of your browsers should notify you that a new book was saved.
 
