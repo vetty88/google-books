@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 
-const routes = require('./routes');
+const routes = require('../routes');
 
 const PORT = process.env.PORT || 5000;
 
 // require db connection
-require('./models');
+require('../models');
 
 // configure body parser for AJAX requests
 app.use(express.urlencoded({ extended: true }));
