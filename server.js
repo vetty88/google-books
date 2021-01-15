@@ -1,7 +1,6 @@
 const path = require('path');
 const book = require('./models/book');
-
-var app = express();
+const app = require ("express");
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -28,7 +27,7 @@ app.get('/api/books', async (req, res) => {
 });
 
 // ensures the proxy we set earlier is pointing to your express api
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
