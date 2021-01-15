@@ -1,6 +1,7 @@
 const path = require('path');
 const book = require('./models/book');
-const app = require ("express");
+const express = require ("express");
+const app = express();
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
