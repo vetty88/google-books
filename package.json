@@ -60,8 +60,8 @@
   },
   "scripts": {
     "client": "cd client && npm start",
-    "server": "cd server && npm start",
-    "start": "concurrently - kill-others \"npm run server\" \"npm run client\""
+    "server": "node server.js && npm start",
+    "start": "npm run server && npm run client"
   },
   "browserslist": {
     "production": [
