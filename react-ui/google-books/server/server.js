@@ -6,8 +6,9 @@ const PORT = process.env.PORT || 8080;
 
 if(process.env.NODE_ENV === 'production'){
   const path  =  require('path');
-  app.get('/*',(req,res)=>{
-      res.sendfile(path.resolve(__dirname,'client','build','index.html'));
+  app.get('*', function (req, res) {
+    const index = path.join(__dirname, 'build', 'index.html');
+    res.sendFile(index);
   });
 }
 
