@@ -15,5 +15,8 @@
     "test": "react-scripts test - env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.4.0"
   }
 }
