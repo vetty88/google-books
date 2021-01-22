@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "proxy": "https://localhost:5000",
+  "type": "module",
   "engines": {
     "node": "14"
   },
@@ -18,30 +18,27 @@
     "babel-cli": "^6.26.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
-    "build": "^0.1.4",
     "chokidar": "^3.4.3",
     "cors": "2.8.5",
     "create-react-app": "^4.0.1",
     "debug": "^4.3.1",
     "dotenv": "^8.2.0",
-    "eslint": "^7.17.0",
+    "eslint": "^7.12.1",
     "eslint-config-react-app": "^6.0.0",
     "express": "^4.17.1",
     "gh": "^2.8.8",
     "github": "^14.0.0",
     "heroku": "^7.47.6",
-    "html-webpack-plugin": "^4.5.1",
     "if-env": "^1.0.4",
     "joi": "^17.3.0",
     "jquery": "^3.5.1",
     "js-data": "^3.0.9",
     "jsx": "^0.9.89",
-    "marked": "^0.6.0",
+    "marked": "^1.2.7",
     "mongo": "^0.1.0",
     "mongodb": "^3.6.3",
-    "mongoose": "^5.11.11",
     "nodejs": "0.0.0",
-    "npm": "^6.14.10",
+    "nodemon": "^2.0.6",
     "pages": "0.0.16",
     "popper": "^1.0.1",
     "popper.js": "^1.16.1",
@@ -50,18 +47,22 @@
     "react-list": "^0.8.16",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
-    "run": "^1.4.0",
     "skeleton": "^0.1.2",
     "sudo": "^1.0.3",
-    "terser-webpack-plugin": "^5.1.1",
     "typescript": "^4.0.5",
-    "web-vitals": "^0.2.4",
-    "webpack": "^5.1.0"
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "client": "cd client && npm start",
-    "server": "node server.js && npm start",
-    "start": "npm run server && npm run client"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -79,19 +80,6 @@
     "@babel/preset-react": "^7.12.5",
     "babel-eslint": "^10.1.0",
     "concurrently": "^5.3.0",
-    "nodemon": "^2.0.7",
     "optimize-css-assets-webpack-plugin": "^5.0.4"
-  },
-  "description": "<!-- TABLE OF CONTENTS -->\r ## Table of Contents",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vetty88/google-books.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vetty88/google-books/issues"
-  },
-  "homepage": "https://github.com/vetty88/google-books#readme"
+  }
 }
