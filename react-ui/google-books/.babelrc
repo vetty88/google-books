@@ -1,9 +1,0 @@
-{
-    "presets": [
-        "@babel/env", 
-        "react-app"
-    ],
-    "plugins": [
-        "transform-class-properties"
-    ]
-}
