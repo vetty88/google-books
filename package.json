@@ -84,5 +84,16 @@
     "babel-eslint": "^10.1.0",
     "concurrently": "^5.3.0",
     "optimize-css-assets-webpack-plugin": "^5.0.4"
-  }
+  },
+  "description": "<!-- TABLE OF CONTENTS -->\r ## Table of Contents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vetty88/google-books.git"
+  },
+  "author": "Y Waller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vetty88/google-books/issues"
+  },
+  "homepage": "https://github.com/vetty88/google-books#readme"
 }
