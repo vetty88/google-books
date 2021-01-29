@@ -13,6 +13,7 @@
     "heroku": "^7.47.11",
     "joi": "^17.3.0",
     "nodejs": "0.0.0",
+    "popper": "^1.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
