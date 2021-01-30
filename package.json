@@ -57,7 +57,8 @@
     "skeleton": "^0.1.2",
     "sudo": "^1.0.3",
     "typescript": "^4.0.5",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -92,7 +93,6 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.5",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
     "concurrently": "^5.3.0",
     "optimize-css-assets-webpack-plugin": "^5.0.4"
   },
