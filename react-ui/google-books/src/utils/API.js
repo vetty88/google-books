@@ -1,6 +1,5 @@
 import axios from "axios"; 
 
-
 export default {
     // Get book from google search 
     getGoogleSearchBooks: function(query) {
@@ -22,5 +21,11 @@ export default {
   saveBook: function(savedBooks) {
     return axios.post("/api/books", savedBooks);
   }
+  .then(response => { 
+    console.log(response)
+  })
+  .catch(error => {
+      console.log(error.response)
+  })
+}
 
-};
