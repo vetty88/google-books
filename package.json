@@ -52,6 +52,7 @@
     "pages": "0.0.16",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
+    "react-axios-helpers": "^1.2.3",
     "react-dom": "^17.0.1",
     "react-list": "^0.8.16",
     "react-router-dom": "^5.2.0",
