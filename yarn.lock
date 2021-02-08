@@ -4232,9 +4232,9 @@ node-sass@^4.5.3:
     "true-case-path" "^1.0.2"
 
 node@^15.7.0:
-  version "15.7.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-15.7.0.tgz#aad76f1c15156c81bef7f5e192c91f4b236eebab"
-  integrity sha512-yVFRy6PA/s9bB2m9nKS5Ny965dx+RRQWiID5lIerYVLaT1nypJC4UsD/HdqSqg1wL8aDOP/Wz779f/ND1orI3g==
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-15.8.0.tgz#097049a9506f8d32ee69551345c5d8fb59bdd442"
+  integrity sha512-uuO9afbPl7CqTB9dqoYEW+co7r1/ott/kiG+btHx1ussJliolfELO6ryDp9JX0IIaRsyPgppP5FF4wkz5PP9Rw==
   dependencies:
     node-bin-setup "^1.0.0"
 
