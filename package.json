@@ -13,6 +13,7 @@
     "babel-polyfill": "^6.23.0",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
+    "nginx": "^0.0.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
@@ -20,8 +21,8 @@
     "react-fontawesome": "^1.6.1",
     "react-router-dom": "^4.1.1",
     "react-sizer": "^1.0.0",
-    "seedrandom": "^2.4.3",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "seedrandom": "^2.4.3"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

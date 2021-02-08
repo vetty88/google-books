@@ -4061,6 +4061,11 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+nginx@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/nginx/-/nginx-0.0.0.tgz#a917c46faf4710aa8c051d9adeb21bf66475123a"
+  integrity sha1-qRfEb69HEKqMBR2a3rIb9mR1Ejo=
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
