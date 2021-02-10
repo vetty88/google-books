@@ -3,8 +3,9 @@ const mongoose = require("mongoose");
 const path = require('path');
 const PORT = process.env.PORT || '8080';
 const app = express();
+const routes = require("./routes");
 
-app.set("port", PORT)
+app.set("port", PORT);
 
 app.use(express.static(path.join(__dirname, 'build')));
 
