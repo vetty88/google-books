@@ -1,4 +1,4 @@
-import * as Sentry from "../../../react-ui/google-books/src/services/node_modules/@sentry/browser";
+import * as Sentry from "@sentry/browser";
 
 function init() {
   Sentry.init({

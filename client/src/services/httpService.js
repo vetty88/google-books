@@ -1,5 +1,5 @@
 import axios from "axios";
-import { toast } from "../../../react-ui/google-books/src/services/node_modules/react-toastify";
+import { toast } from "react-toastify";
 import logger from "./logService";
 
 // Whenever we have an response with an error, this function will be called first and then the controller will pass to a catch block

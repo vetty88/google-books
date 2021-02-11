@@ -4,9 +4,18 @@
   "description": "repro bug with yarn not creating lock file",
   "main": "server.js",
   "scripts": {
-    "go": "rimraf yarn.lock && rimraf node_modules && yarn install && node -e \"var fs = require('fs'); if (!fs.existsSync('yarn.lock')) { console.error('NO LOCK FILE FOUND!!!'); }\""
+    "go": "rimraf yarn.lock && rimraf node_modules && yarn install && node -e \"var fs = require('fs'); if (!fs.existsSync('yarn.lock')) { console.error('NO LOCK FILE FOUND!!!'); }\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
-  "author": "jharris4",
+  "author": "Y Waller",
   "license": "MIT",
   "dependencies": {
     "@sentry/browser": "^6.1.0",
