@@ -21,7 +21,7 @@ export default {
   saveBook: function(savedBooks) {
     return axios.post("/api/books", savedBooks);
   }
-  .then(response => { 
+  (response => { 
     console.log(response)
   })
   .catch(error => {

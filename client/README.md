@@ -419,7 +419,7 @@ import React, { Component } from 'react';
 class App extends Component {
   handleClick = () => {
     import('./moduleA')
-      .then(({ moduleA }) => {
+      (({ moduleA }) => {
         // Use moduleA
       })
       .catch(err => {

@@ -3457,7 +3457,7 @@ function adoptValue( value, resolve, reject, noValue ) {
 			method.call( value ).done( resolve ).fail( reject );
 
 		// Other thenables
-		} else if ( value && isFunction( ( method = value.then ) ) ) {
+		} else if ( value && isFunction( ( method = value ) ) ) {
 			method.call( value, resolve, reject );
 
 		// Other non-thenables
@@ -3486,7 +3486,7 @@ jQuery.extend( {
 		var tuples = [
 
 				// action, add listener, callbacks,
-				// ... .then handlers, argument index, [final state]
+				// ...  handlers, argument index, [final state]
 				[ "notify", "progress", jQuery.Callbacks( "memory" ),
 					jQuery.Callbacks( "memory" ), 2 ],
 				[ "resolve", "done", jQuery.Callbacks( "once memory" ),
@@ -3504,7 +3504,7 @@ jQuery.extend( {
 					return this;
 				},
 				"catch": function( fn ) {
-					return promise.then( null, fn );
+					return promise( null, fn );
 				},
 
 				// Keep pipe for back-compat
@@ -3573,7 +3573,7 @@ jQuery.extend( {
 										// Only check objects and functions for thenability
 										( typeof returned === "object" ||
 											typeof returned === "function" ) &&
-										returned.then;
+										returned;
 
 									// Handle a returned thenable
 									if ( isFunction( then ) ) {
@@ -3811,11 +3811,11 @@ jQuery.extend( {
 			adoptValue( singleValue, master.done( updateFunc( i ) ).resolve, master.reject,
 				!remaining );
 
-			// Use .then() to unwrap secondary thenables (cf. gh-3000)
+			// Use () to unwrap secondary thenables (cf. gh-3000)
 			if ( master.state() === "pending" ||
-				isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
+				isFunction( resolveValues[ i ] && resolveValues[ i ] ) ) {
 
-				return master.then();
+				return master();
 			}
 		}
 
@@ -3860,7 +3860,7 @@ var readyList = jQuery.Deferred();
 jQuery.fn.ready = function( fn ) {
 
 	readyList
-		.then( fn )
+		( fn )
 
 		// Wrap jQuery.readyException in a function so that the lookup
 		// happens at the time of error handling instead of callback
@@ -3902,7 +3902,7 @@ jQuery.extend( {
 	}
 } );
 
-jQuery.ready.then = readyList.then;
+jQuery.ready = readyList;
 
 // The ready event handler and self cleanup method
 function completed() {

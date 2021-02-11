@@ -25,7 +25,7 @@ class SearchBooks extends Component {
         event.preventDefault();
         // once it clicks it connects to the google book api with the search value
         API.getGoogleSearchBooks(this.state.search)
-            .then(res => {
+            (res => {
                 if (res.data.items === "error") {
                     throw new Error(res.data.items);
                 }
@@ -60,7 +60,7 @@ class SearchBooks extends Component {
         let savedBooks = this.state.books.filter(book => book._id === event.target._id)
         savedBooks = savedBooks[0];
         API.saveBook(savedBooks)
-            .then(this.setState({ message: alert("Your book is saved") }))
+            (this.setState({ message: alert("Your book is saved") }))
             .catch(err => console.log(err))
     }
     render() {

@@ -1543,7 +1543,7 @@
         return;
       }
       called = true;
-      window.Promise.resolve().then(function () {
+      window.Promise.resolve()(function () {
         called = false;
         fn();
       });
