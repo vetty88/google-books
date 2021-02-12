@@ -18,6 +18,6 @@ export default {
     return http.delete('/api/books/' + id);
   },
   // Saves a book to the database
-  saveBook: function(bookData) {
-    return http.post('/api/books', bookData);
+  saveBook: function(savedBooks) {
+    return http.post('/api/books', savedBooks);
   };
