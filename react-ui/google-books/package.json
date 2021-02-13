@@ -36,7 +36,6 @@
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "description": "This Project was bootstrapped with [Create React App](https://github.com/faceProject/create-react-app).",
-  "main": "index.js",
   "author": "Yvette Waller",
   "license": "ISC",
   "browserslist": {
