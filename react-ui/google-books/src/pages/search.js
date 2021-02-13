@@ -67,7 +67,7 @@ class Search extends Component {
               <div className="order-sm-2 p-2 bd-highlight">
                 <img
                   className="image-250"
-                  src="/images/img-books-window.jpg"
+                  
                   alt="React Google Books Search"
                 />
               </div>
