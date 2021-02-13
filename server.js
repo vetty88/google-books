@@ -21,7 +21,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb+srv://vetty88:fXP1EMS6Ww0nANsY@cluster0.0kcvg.mongodb.net/googlebooks?authSource=googlebooks&w=1",
+  process.env.MONGODB_URI || "mongodb+srv://vetty88:fXP1EMS6Ww0nANsY@cluster0.0kcvg.mongodb.net/googlebooks",
   {
     useCreateIndex: true,
     useNewUrlParser: true
