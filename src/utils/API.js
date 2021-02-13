@@ -3,7 +3,7 @@ import http from "../services/httpService";
 
 export default {
     // Get book from google search 
-  getGoogleSearchBooks: function(q) {
+  getBooks: function(q) {
     return http.get("/api/google", {
       params: { q: "title:" + q }
     });
