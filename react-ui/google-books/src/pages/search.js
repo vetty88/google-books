@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { toast } from "react-toastify";
 import Book from "../components/Book/index";
-import SearchForm from "../components/SearchForm/index";
+import SearchFm from "../components/SearchFm/index";
 import { List } from "../components/List/index";
 import API from "../utils/API";
 
@@ -78,7 +78,7 @@ class Search extends Component {
                 <h2 className="heading-subtitle mx-sm-3 mb-2">
                   Search for and Save Books of Interest.
                 </h2>
-                <SearchForm
+                <SearchFm
                   handleInputChange={this.handleInputChange}
                   handleFormSubmit={this.handleFormSubmit}
                   q={this.state.q}

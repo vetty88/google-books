@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function SearchForm({ q, handleInputChange, handleFormSubmit }) {
+function SearchFm({ q, handleInputChange, handleFormSubmit }) {
   return (
     <form className="form-inline" role="form">
       <div className="form-group mx-sm-3 mb-2">
@@ -31,4 +31,4 @@ function SearchForm({ q, handleInputChange, handleFormSubmit }) {
   );
 }
 
-export default SearchForm;
+export default SearchFm;

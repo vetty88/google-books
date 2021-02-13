@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import Jumbotron from "../components/Jumbotron";
 import { Container, Row, Col } from "../components/Grid";
-import SearchForm from "../components/SearchForm";
+import SearchFm from "../components/SearchFm";
 import SearchResult from "../components/SearchResult"
 
 
@@ -72,7 +72,7 @@ class SearchBooks extends Component {
                 <Container>
                     <Row>
                         <Col size="12">
-                            <SearchForm
+                            <SearchFm
                                 handleFormSubmit={this.handleFormSubmit}
                                 handleInputChange={this.handleInputChange}
                             />
