@@ -20,4 +20,5 @@ export default {
   // Saves a book to the database
   saveBook: function(savedBooks) {
     return http.post('/api/books', savedBooks);
-  };
+  }
+};
