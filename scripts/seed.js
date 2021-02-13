@@ -1,15 +1,9 @@
 const mongoose = require("mongoose");
-const Book = require("../models/book");
+const db = require("../models");
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
-  {
-    useCreateIndex: true,
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    family: 4 // Use IPv4, skip trying IPv6
-  }
+  process.env.MONGODB_URI || "mongodb+srv://vetty88:fXP1EMS6Ww0nANsY@cluster0.0kcvg.mongodb.net/googlebooks",
 );
 
 const booksSeed = [
@@ -64,33 +58,15 @@ const booksSeed = [
   }
 ];
 
-async function seed() {
-  await mongoose
-    .connect(
-      MONGODB_URI,
-      options
-    )
-    .then(() => {
-      console.log("Seed: Connected to Database");
+  db.Book
+    .remove({})
+    .then(() => db.Book.collection.insertMany(bookSeed))
+    .then(data => {
+      console.log(data.result.n + "records insterted!");
+      process.exit(0)
     })
-    .catch(err => {
-      console.log("Seed: Not Connected to Database ERROR! ", err);
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
     });
-  for (let book of booksSeed) {
-    const { _id: bookId } = await new Book({
-      title: book.title,
-      subtitle: book.subtitle,
-      authors: book.authors,
-      link: book.link,
-      description: book.description,
-      image: book.image,
-      googleId: book.googleId
-    }).save();
-  }
-
-  mongoose.disconnect();
-
-  console.info("Seed: Done!");
-}
-
-seed();
+  
