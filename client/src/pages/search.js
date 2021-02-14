@@ -12,6 +12,8 @@ class Search extends Component {
     message: "Simply search for books via the Google Books API"
   };
 
+
+
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
