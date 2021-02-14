@@ -20,6 +20,7 @@
   ![Screenshot](./Screen.PNG?raw=true)
 
   Repo: https://github.com/vetty88/Google-Books
+  Heroku App: https://books-app-yw2020.herokuapp.com/search
 
 Video of app in action, see file: https://github.com/vetty88/Google-Books/blob/master/Video.mp4
 
