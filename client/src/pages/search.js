@@ -67,11 +67,7 @@ class Search extends Component {
           <div className="col-10 col-centered">
             <div className="d-flex flex-wrap flex-row bd-highlight mb-3 justify-content-center align-items-center">
               <div className="order-sm-2 p-2 bd-highlight">
-                <img
-                  className="image-250"
-                  
-                  alt="React Google Books Search"
-                />
+                
               </div>
               <div className="order-sm-1 p-2 bd-highlight">
                 <h1 className="heading-title mx-sm-3 mb-2">
