@@ -1,37 +1,43 @@
 
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<p>
+    <img src="./YWlogo.png" align="right" height="500px" width="auto" alt="Logo"/>
+<h1 style="font-family:Kaushan Script"> 🌟 Google-Books Project 🌟 </h1>
  <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [License](#license)
-- [Contact](#contact)
-- [Creator and Acknowledgements](#creator-and-acknowledgements)
+* 🚀 [About the Project](#answers.project)
+* 🛠️ [Installation](#installation)
+* 😁 [Usage](#usage)
+* ➕ [Contributing](#contributing)
+* ⁉️ [Tests](#tests)
+* 📑[License](#license)
+* 😎[Contact](#contact)
+* ❤️ [Creator & Acknowledgements](#acknowledgements)
+</p>
+<br><br>
+<p>
+<h2> 🚀 About ## Google-Books project </h2>
 
-<h1> ## Google-Books </h1>
-
-  React App to search for books, save to a reading list and then view and modify your reading list
+  React App to search for books, save to a reading list. View and modify your reading list.
 
   Screenshot of Project (Google Chrome): 
   ![Screenshot](./Screen.PNG?raw=true)
 
   Repo: https://github.com/vetty88/Google-Books
-  Heroku App: https://books-app-yw2020.herokuapp.com/search
 
-Video of app in action, see file: https://github.com/vetty88/Google-Books/blob/master/Video.mp4
+</p>
+<p>
+<h2> 🛠️ Installation </h2>
+**To get a local copy up and running follow these simple steps.**
 
+Created using VS Code, NPM, Node, React (node modules), Express. Launched on Heroku and Github.
 
-## Installation
-To get a local copy up and running follow these simple steps.
-
-Created using VS Code - NPM, Node, React (associated modules), Express. Launched on Heroku and Github
-
-Prerequisites
-This is an example of how to list things you need to use the software and how to install them.
+<h3> Prerequisites </h3>
 
 Installation-
   Clone the repo
@@ -40,23 +46,21 @@ Installation-
     npm install
     npm inquirer
     npm audit fix
-  Then open index.js file in console log and run
-    node index.js
-  You will be taken through a series of questions (user prompts) which will then lead to the generation of your new readme.md file!
 
+<h2> 😁 Usage </h2>
 
-## Usage
+This project can be used for To create a reading list. Or as base code to create a list using a third party API to retrieve data.. 
 
-This project can be used for undefined. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 For more examples, please refer to the Documentation
 
-## Contributing
+<h2> ➕ Contributing </h2>
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Regarding this project I respectfully make the following requests regarding contributions:
+</p>
+<p>
 
-
-you are welcome to contribute
+You are welcome to fork this repo
 
 Fork the Project
   Create your Feature Branch 
@@ -67,31 +71,29 @@ Fork the Project
     (git push origin feature/AmazingFeature)
   Open a Pull Request
 
-## Tests
+<h2> ⁉️ Tests </h2>
 
 See the open issues for a list of proposed features (and known issues). Testing completed and any known issues include the following:
- Tested in VS Code, Terminal, Google Chrome, Heroku
+
+Tested in VS Code, Terminal, Google Chrome, Heroku - no known bugs.
  
-## License
+<h2> 📑 License <h2>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-## Contact
+![Made with love in Bairnsdale ](https://madewithlove.now.sh/au?heart=true&template=plastic&text=Bairnsdale+)
+</p>
+<p>
+<h2> 😎 Contact </h2>
 
 Your Name - vetty88@gmail.com
 
-Project Link: https://github.com/Vetty88/Google-Books
+Project Link: https://github.com/vetty88/Google-Books
 
-## Creator and Acknowledgements
+<h2> ❤️ Creator and Acknowledgements </h2>
 
-Github User: Vetty88
+Github User: vetty88
 
 
-Yvette Waller 2020
-Credits Codebase Author: Monash University/Trilogy Education.
-
-Resources utilised to edit the code:
-
-Monash University ReadMe and Slide Materials Mozilla MDN WebDocs: https://developer.mozilla.org/en-US/ W3 Schools: https://www.w3schools.com/ Stack Overflow: https://www.stackoverflow.com/
-
-;
+Yvette Waller 2021
+Credits 
+** </p>
